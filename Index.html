@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Create a header tag and add a logo image inside it -->
+    <header>
+        <img id="logo" src="http://theiphonewalls.com/wp-content/uploads/2013/04/Lamborghini-Logo-1.jpg" alt="">
+    </header>
+    <!-- Create a container holding the heading, paragraph -->
+    <div class="top container ">
+        <h1>Welcome to car kharido!</h1><br>
+        <p>Select your favorite cars, confirm your mobile number <br> and get them delivered in 5 days -
+        </p>
+        <br>
+        <div class="button store"> <a href="#table"> <b>What’s in store?</b> </a> </div>
+    </div>
+    <div class="table container">
+        <h2>Here’s What Is In Store Today</h2>
+        <!-- Iteration 1: Create a table to display the items avaliable in the Groove store -->
+        <table id="table">
+            <tr>
+                <th>SELECT</th>
+                <th>ITEM</th>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>CONTAINS</th>
+                <th>QUANTITY</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="checkbox"></td>
+                <td><img src="https://tse4.mm.bing.net/th?id=OIP.ntXS0fF7pnG09u08J9_4LQHaFj&pid=Api&P=0&w=236&h=177" alt=""></td>
+                <td>BUGGATI CHIRON</td>
+                <td>INR 25 crores</td>
+                <td> The engine in the Chiron has a peak power output of 1,103 kW (1,479 hp; 1,500 PS) at 6,700 rpm and 1,600 N⋅m (1,180 lb⋅ft) of torque starting from 2,000 to 6,000 rpm.</td>
+                <td><input type="number" id="quantity"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="checkbox"></td>
+                <td><img src="https://tse4.mm.bing.net/th?id=OIP.DvgrWHZJJ8W1yxQVgIvM4AHaE7&pid=Api&P=0&w=233&h=155" alt=""></td>
+                <td>lamborghini veneno</td>
+                <td>INR 10 crores</td>
+                <td>The engine is a development of the Aventador's 6.5-litre V12 and generates a power output of 750 PS (552 kW; 740 hp) at 8,400 rpm and 690 N⋅m (509 lb⋅ft) of torque at 5,500 rpm.</td>
+                <td><input type="number" id="quantity"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="checkbox"></td>
+                <td><img src="https://images.classic.com/vehicles/5d2ef74da4f53303c8d302e665d2d1d2bcfdcf5e.jpg?auto=format&fit=crop&ar=16:9&w=5500" alt=""></td>
+                <td>hummer h1</td>
+                <td>INR 50 lakhs</td>
+                <td> The common engine/automatic transmission combinations are:
+
+                    6.2 L GM Diesel V8/GM TH400/3L80 3-speed
+                    6.5 L GM Diesel V8/GM 4L80-E 4-speed
+                    5.7 L (350 ci) L05 gasoline V8 TBI/GM 4L80-E 4-speed
+                    6.5 L turbo GM Diesel V8/GM 4L80-E 4-speed
+                    6.6 L turbo Duramax LLY V8 turbo Diesel/Allison 1000 5-speed (model year 2006</td>
+                <td><input type="number" id="quantity"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="checkbox"></td>
+                <td><img src="https://www.motortrend.com/uploads/sites/10/2018/06/2019-mini-hardtop-cooper-3door-hatchback-angular-front.png" alt=""></td> 
+                <td>Mini Cooper</td>
+                <td>INR 38 lakhs</td>
+                <td>The Three-Door hatchback is capable of sprinting from 0-100kmph in 6.7 seconds. MINI Cooper price is ₹ 38.00 Lakh. The price of Petrol version for Cooper is ₹ 38.00 Lakh.</td>
+                <td><input type="number" id="quantity"></td>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <p>One last step to place your order. <br> Enter your mobile number and you are done!</p>
+        <br>
+        <input type="text" id="mobile" placeholder="Enter your mobile number">
+        <br><br>
+        <div class="button" onclick="buy" id="buy-now"> <b>Buy Now</b> </div>
+        <h3 id="thanks">Thank You For Shopping With Us.</h3>
+        <br><br>
+        <footer>
+            <p>Made with ❤ by ProGrad Junior, DEVAJ</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("buy-now").onclick = (evt) => {
+            document.getElementById("thanks").style.display = "inherit";
+            document.getElementById("buy-now").style.display = "none";
+        }
+    </script>
+</body>
+</html>
